@@ -3,17 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Untitled Document</title>
-<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
+	<div>
+		<p id="site_title">SOLVE a square equation.</p>
+	</div>
 
 <div id="add_eq">
 
 <input id="a_f" type="text">x^2+
 <input id="b_f" type="text">y+
 <input id="c_f" type="text">=0
-<input type="button" value="Solve" onClick="solve()"><br /><br />
+
+<input type="button" value="Solve" onclick="solve()"><br /><br />
 
 <p id="det">D=</p>
 <p id="b1">b1=</p>
@@ -21,8 +25,20 @@
 
 </div>
 
-<canvas id="can" width="500" height="500"></canvas>
-<script type="application/javascript" src="javascripts/main.js"></script>
+<canvas id="can" width="800" height="800">
+	
+	
+</canvas>
+
+<p id="x_arrow" class="arrows">
+	&#8594; X
+	</p>
+	
+<p id="y_arrow" class="arrows">
+	&#8595;<br />Y
+</p>
+
+<script type="application/javascript" src="js/main.js"></script>
 
 </body>
 </html>
